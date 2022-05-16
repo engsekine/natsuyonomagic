@@ -1,0 +1,70 @@
+環境設定
+
+0.gitを追加する場合
+
+git init
+git config --global user.name "engsekine"
+git config --global user.email "engsekine@gmail.com"
+
+1.yarnダウンロード　
+yarn init -y
+
+2.バージョン設定
+volta pin node
+volta pin yarn
+
+3.devDependenciesダウンロード
+yarn add webpack webpack-cli webpack-dev-server babel-loader @babel/core @babel/preset-env html-loader html-webpack-plugin style-loader sass sass-loader css-loader autoprefixer postcss postcss-loader typescript ts-loader @babel/preset-react --dev
+//jest eslint
+yarn add jest eslint-plugin-jest eslint eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint-config-prettier eslint-config-prettier husky lint-staged --dev
+
+4.dependenciesダウンロード
+yarn add react react-dom @types/react @types/react-dom
+
+5.ディレクトリ作成
+//gitignore作成
+touch .gitignore
+
+//webpack.config.js作成
+touch webpack.config.js
+
+//src ディレクトリ作成
+mkdir src
+
+//src/html ディレクトリ作成
+mkdir src/html && touch src/html/index.html
+
+//src/css src/scss ディレクトリ作成
+mkdir src/css && touch src/css/style.css && mkdir src/scss && touch src/scss/style.scss
+
+//src/js src/ts App.tsx index.tsx ディレクトリ作成
+mkdir src/js && touch src/js/index.js && mkdir src/ts && touch src/ts/index.ts && touch src/App.tsx src/index.tsx && tsc --init
+
+//eslint
+touch .eslintignore && touch .prettierrc && touch eslintrc.json && touch tsconfig.json
+
+6.stotybook設定
+npx sb init
+
+7.github公開設定
+yarn add gh-pages --dev
+
+
+全部まとめたやつ
+
+a.git管理
+git init && git config --global user.name "engsekine" && git config --global user.email "engsekine@gmail.com"
+
+b.バージョン管理
+yarn init -y && volta pin node && volta pin yarn
+
+c.セットアップ
+yarn add webpack webpack-cli webpack-dev-server babel-loader @babel/core @babel/preset-env html-loader html-webpack-plugin style-loader sass sass-loader css-loader autoprefixer postcss postcss-loader typescript ts-loader @babel/preset-react --dev && yarn add react react-dom @types/react @types/react-dom
+
+yarn add jest eslint-plugin-jest eslint eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint-config-prettier eslint-config-prettier husky lint-staged eslint-plugin-html --dev
+
+d.stotybook追加
+npx sb init
+
+e.github公開
+yarn add gh-pages --dev

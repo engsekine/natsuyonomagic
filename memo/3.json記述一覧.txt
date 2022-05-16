@@ -1,0 +1,43 @@
+{
+    "private": true,
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{css,less,sass,scss}": [
+            "stylelint --fix"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn lint",
+            "pre-push": "yarn test",
+        }
+    },
+    
+    "scripts": {
+        "dev": "webpack --mode development",
+        "build": "webpack --mode production",
+        "watch": "webpack --watch",
+        "serve": "webpack serve",
+        "start": "webpack serve && webpack --watch",
+        "lint": "eslint --cache --fix src && prettier --write src",
+        "prepare": "husky install",
+        "test": "jest",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook"
+    },
+}

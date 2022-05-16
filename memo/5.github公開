@@ -1,0 +1,18 @@
+参考
+https://kubogen.com/web-programing-299/
+
+gh-pagesダウロード
+yarn add gh-pages --dev
+
+package.json追加
+"scripts": {
+"deploy": "gh-pages -d build"
+}
+
+"homepage": "https://engsekine.github.io/natsuyonomagic/",
+
+ssh設定
+
+https://qiita.com/ucan-lab/items/21d62f1beaa8007c4ca9
+
+https://qiita.com/aki4000/items/4c81bc2747bbd5e96d85
