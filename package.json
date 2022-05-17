@@ -46,8 +46,10 @@
         "webpack-dev-server": "^4.9.0"
     },
     "dependencies": {
+        "@types/gh-pages": "^3.2.1",
         "@types/react": "^18.0.9",
         "@types/react-dom": "^18.0.4",
+        "gh-pages": "^4.0.0",
         "react": "^18.1.0",
         "react-dom": "^18.1.0"
     },
@@ -79,7 +81,6 @@
             "pre-push": "yarn test"
         }
     },
-
     "scripts": {
         "dev": "webpack --mode development",
         "build": "webpack --mode production",
@@ -90,6 +91,8 @@
         "prepare": "husky install",
         "test": "jest",
         "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook"
-    }
+        "build-storybook": "build-storybook",
+        "deploy": "yarn build && gh-pages -d build"
+    },
+    "homepage": "https://engsekine.github.io/natsuyonomagic/dist/html/index.html/"
 }
