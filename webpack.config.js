@@ -10,7 +10,6 @@ module.exports = {
     output: {
         // 出力ファイルのディレクトリ名
         path: path.join(__dirname, 'dist'),
-        path: path.join(__dirname, 'build'),
         // 出力ファイル名
         filename: '[name].js'
     },
@@ -20,13 +19,13 @@ module.exports = {
             filename: 'html/index.html' // dist/html/以下にindex.htmlをビルド
         })
         /*new HtmlWebpackPlugin({
-                template: path.resolve(__dirname, 'src', 'html', 'header.html'),
-                filename: 'html/header.html'
-            }),
-            new HtmlWebpackPlugin({
-                template: path.resolve(__dirname, 'src', 'html', 'footer.html'),
-                filename: 'html/footer.html'
-            }),*/
+                    template: path.resolve(__dirname, 'src', 'html', 'header.html'),
+                    filename: 'html/header.html'
+                }),
+                new HtmlWebpackPlugin({
+                    template: path.resolve(__dirname, 'src', 'html', 'footer.html'),
+                    filename: 'html/footer.html'
+                }),*/
     ],
     module: {
         rules: [
