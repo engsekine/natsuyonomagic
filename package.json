@@ -94,5 +94,5 @@
         "build-storybook": "build-storybook",
         "deploy": "webpack --mode development && gh-pages -d build"
     },
-    "homepage": "https://engsekine.github.io/natsuyonomagic/dist/html/index.html"
+    "homepage": "https://engsekine.github.io/natsuyonomagic/dist/html"
 }
