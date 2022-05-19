@@ -19,13 +19,13 @@ module.exports = {
             filename: 'html/index.html' // dist/html/以下にindex.htmlをビルド
         })
         /*new HtmlWebpackPlugin({
-                    template: path.resolve(__dirname, 'src', 'html', 'header.html'),
-                    filename: 'html/header.html'
-                }),
-                new HtmlWebpackPlugin({
-                    template: path.resolve(__dirname, 'src', 'html', 'footer.html'),
-                    filename: 'html/footer.html'
-                }),*/
+                            template: path.resolve(__dirname, 'src', 'html', 'header.html'),
+                            filename: 'html/header.html'
+                        }),
+                        new HtmlWebpackPlugin({
+                            template: path.resolve(__dirname, 'src', 'html', 'footer.html'),
+                            filename: 'html/footer.html'
+                        }),*/
     ],
     module: {
         rules: [
