@@ -1,3 +1,4 @@
+//dist/html/index.htmlにリダイレクト
 setTimeout('link()', 0)
 
 function link() {
