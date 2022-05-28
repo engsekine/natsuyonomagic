@@ -234,7 +234,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \*************************/
 /***/ (function() {
 
-eval("\n\n//# sourceURL=webpack://natsuyonomagic/./src/js/index.js?");
+eval("const strict = () => {\n  const test = document.getElementById('test')\n  const btn = document.getElementById('btn')\n  btn.addEventListener('click', () => {\n    if (test.classList.contains('test2')) {\n      //containsメソッドで、test2クラスが既に付与されているか判定\n      test.classList.remove('test2') //test2クラスがついている場合、test２クラスを削除する\n    } else {\n      test.classList.add('test2') //test2クラスがついていない場合、test２クラスを追加する\n    }\n  })\n}\n\nfunction square(number) {\n  return number * number\n}\n\n\n//# sourceURL=webpack://natsuyonomagic/./src/js/index.js?");
 
 /***/ })
 
